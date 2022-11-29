@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Адаптив - Велосайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Подключение слайдера Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Подключение стилей из папки css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="menu main-menu">
+          <div class="menu__body">
+            <a class="menu__link" href="#about-us">About us</a>
+            <div class="menu__dot">.</div>
+            <a class="menu__link" href="#work">Work</a>
+          </div>
+          <div class="menu__logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <div class="menu__body">
+            <a class="menu__link" href="#shop">Shop</a>
+            <div class="menu__dot">.</div>
+            <a class="menu__link" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </header>
+      <!-- блок с контентом -->
+      <div class="content">
+        <!-- промо-блок -->
+        <div id="about-us" class="promo">
+          <div class="promo__body">
+            <div class="promo__icon">
+              <img src="img/icon.png" alt="">
+            </div>
+            <div class="promo__title title">
+              A new generation of vintage bike
+            </div>
+            <div class="promo__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </div>
+          </div>
+        </div>
+        <!-- bike 1 -->
+        <div id="work" class="bike-1 bike">
+          <div class="bike-1__photo">
+            <img class="bike-1__background" src="img/2.jpg" alt="">
+            <img class="bike-1__logo" src="img/logo-bike-1.png" alt="">
+          </div>
+          <div class="about">
+            <div class="about__text-body">
+              <div class="about__icon">
+                <img src="img/icon-bike-1.png" alt="">
+              </div>
+              <div class="about__title title">
+                Vintage oliva
+              </div>
+              <div class="about__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.
+                It has survived.
+              </div>
+            </div>
+            <div class="about__photo">
+              <img src="img/3.jpg" alt="">
+              <div class="about__triangle-body">
+                <div class="about__triangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bike 2 -->
+        <div class="bike-2 bike">
+          <div class="about">
+            <div class="about__text-body">
+              <div class="about__icon">
+                <img src="img/icon-bike-2.png" alt="">
+              </div>
+              <div class="about__title title">
+                Vintage oliva
+              </div>
+              <div class="about__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.
+                It has survived.
+              </div>
+            </div>
+            <div class="about__photo">
+              <img src="img/5.jpg" alt="">
+              <div class="about__triangle-body">
+                <div class="about__triangle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bike-2__photo">
+            <img class="bike-2__background" src="img/4.jpg" alt="">
+            <img class="bike-2__logo" src="img/logo-bike-2.png" alt="">
+          </div>
+        </div>
+        <!-- bike 3 -->
+        <div class="bike-3 bike">
+          <div class="bike-3__photo-1">
+            <img class="bike-3__background-1" src="img/6.jpg" alt="">
+            <img class="bike-3__logo" src="img/logo-bike-3.png" alt="">
+          </div>
+          <div class="about">
+            <div class="about__text-body">
+              <div class="about__icon">
+                <img src="img/icon-bike-3.png" alt="">
+              </div>
+              <div class="about__title title">
+                Retro bike - M. Hulot
+              </div>
+              <div class="about__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.
+                It has survived.
+              </div>
+            </div>
+            <div class="about__photo">
+              <img src="img/8.jpg" alt="">
+              <div class="about__triangle-body">
+                <div class="about__triangle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bike-3__photo-2">
+            <img class="bike-3__background-2" src="img/7.jpg" alt="">
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide slide-1">
+                <div class="slide__img">
+                  <img src="img/Icon-tw.png" alt="twitter_icon">
+                </div>
+                <div class="slide__title">AOS New York @aod <span>/ 35 min</span></div>
+                <div class="slide__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, 
+                  dictum turpis vitae, pretium ante amet.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide slide-2">
+                <div class="slide__img">
+                  <img src="img/Icon-tw.png" alt="twitter_icon">
+                </div>
+                <div class="slide__title">AOS New York @aod <span>/ 35 min</span></div>
+                <div class="slide__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut tellus ac nulla semper rhoncus.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide slide-3">
+                <div class="slide__img">
+                  <img src="img/Icon-tw.png" alt="twitter_icon">
+                </div>
+                <div class="slide__title">AOS New York @aod <span>/ 35 min</span></div>
+                <div class="slide__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, 
+                  dictum turpis vitae, pretium ante amet.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- shop -->
+        <div id="shop" class="shop">
+          <div class="shop__body_img">
+            <div class="images-block images-block-1">
+              <div class="images-block__inner-block">
+                <div class="images-block__image">
+                  <img src="img/shop-1.jpg" alt="">
+                </div>
+                <div class="images-block__image">
+                  <img src="img/shop-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="images-block__image">
+                <img src="img/shop-3.jpg" alt="">
+              </div>
+            </div>
+            <div class="images-block images-block-2">
+              <div class="images-block__image">
+                <img src="img/shop-4.jpg" alt="">
+              </div>
+              <div class="images-block__image">
+                <img src="img/shop-5.jpg" alt="">
+              </div>
+            </div>
+            <div class="images-block images-block-3">
+              <div class="images-block__image">
+                <img src="img/shop-6.jpg" alt="">
+              </div>
+              <div class="images-block__inner-block">
+                <div class="images-block__image">
+                  <img src="img/shop-7.jpg" alt="">
+                </div>
+                <div class="images-block__image">
+                  <img src="img/shop-8.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="shop__icon-link icon-link">
+              <div class="icon-link__image">
+                <img src="img/shop-6-icon.png" alt="">
+              </div>
+              <div class="icon-link__text">Shop now</div>
+            </div>
+          </div>
+          <div class="shop__body_btn">
+            <a href=""><button class="shop__button">Discover the shop</button></a>
+          </div>
+        </div>
+        <!-- e-mail -->
+        <div id="contact" class="email">
+          <div class="email__body">
+            <div class="email__logo">
+              <img src="img/Logo-mailing.png" alt="">
+            </div>
+            <div class="email__text">Stay on the saddle!</div>
+            <div class="email__form">
+              <form action="#">
+                <input type="text" class="email__input" placeholder="enter your e-mail...">
+                <input type="submit" class="email__button" value="Go">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__body">
+          <div class="footer__info footer__item">
+            <p><b>AOD New York</b></p>
+            <p>2250 Lexington Avenue</p>
+            <p>New York, NY 10035 - <a href="">info@domain.com</a></p>
+          </div>
+          <div class="footer__icons footer__item">
+            <div class="footer__icon">
+              <a href=""><img src="img/sn-1.png" alt="icon"></a>
+            </div>
+            <div class="footer__icon">
+              <a href=""><img src="img/sn-2.png" alt="icon"></a>
+            </div>
+            <div class="footer__icon">
+              <a href=""><img src="img/sn-3.png" alt="icon"></a>
+            </div>
+          </div>
+          <div class="footer__copy footer__item">
+            <span>Handcrafted by &nbsp</span>
+            <div class="footer__logo">
+              <img src="img/Logo-yebo.png" alt="logo">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
